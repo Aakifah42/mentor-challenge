@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>UI web design</title>
+</head>
+
+<body>
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl
+  rounded-2xl md:flex-row md-space-y-0">
+     <div class="flex flex-col justify-center p-8 md:p-14">
+      <span class="mb-3 text-4xl font-bold">Welcome back</span>
+      <span class="font-light text-gray-400 mb-8">
+        Welcome back! Please enter your details
+      </span>
+      <div class="py-4">
+        <span class="mb-2 text-md">Email</span>
+        <input type="text"
+        class="w-full p-2 border border-gray-300 rounded-md
+        placeholder:font-light placeholder:text-gray-500" placeholder="Enter your email"
+        name="email"
+        id="email"
+        />
+      </div>
+      <div class="py-4">
+        <span class="mb-2 text-md">Password</span>
+        <input type="password"
+        name="pass"
+        id="pass"
+        class="w-full p-2 border border-gray-300 rounded-md
+        placeholder:font-light placeholder:text-gray-500" placeholder="***********"
+        />
+      </div>
+      <div class="flex justify-between w-full py-4">
+        <div class="mr-24">
+          <input type="checkbox" name="ch" id="ch" class="mr-2" />
+          <span class="text-md">Remember for 30 days</span>
+        </div>  
+          <span class="font-bold text-md">Forgot password</span>
+        </div>
+        <button
+          class="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white
+          hover:text-black hover:border hover:border-gray-300"
+          >
+          Sign in
+        </button>
+
+        <button
+          class="w-full border border-gray-300 text-md p-2 rounded-lg m-6 hover:bg-black
+          hover:text-white"
+        >
+        <img src="Task 1/google.svg" alt="img" class="w-6 h-6 inline mr-2" >
+        Sign in with Google
+        </button>
+        <div class="text-center text-gray-400">
+          Don't have an account?
+          <span class="font-bold text-black">Sign up for free</span>
+        </div>
+      </div>
+     <div class="relative">
+      <img src="image/photo.jpg" alt="img" class="w-[400px] h-full hidden rounded-2xl
+      md:block object-cover">
+      <!-- text on image-->
+      <div class="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30
+      backdrop-blur-sm rounded drop-shadow-lg md:block">
+        <span class="text-white text-xl">
+          "We've been using Untitled to kick <br> start every new project and can't
+          <br> imagine working without it"
+          <br>Andi Lane <br><div class="flex items-center">
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+            <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+        </div>
+        </span>
+     </div>
+  </div>   
+</div>  
+</body>
+</html>
